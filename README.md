@@ -2,8 +2,6 @@
 
 [![NPM](https://img.shields.io/npm/v/xml2json5-disassembler.svg?label=xml2json5-disassembler)](https://www.npmjs.com/package/xml2json5-disassembler) [![Downloads/week](https://img.shields.io/npm/dw/xml2json5-disassembler.svg)](https://npmjs.org/package/xml2json5-disassembler)
 
-Disassemble XML files into smaller, more manageable JSON5 files and reassemble the XML when needed. This is an extension of [`xml-disassembler`](https://github.com/mcarvin8/xml-disassembler).
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -22,9 +20,9 @@ Disassemble XML files into smaller, more manageable JSON5 files and reassemble t
 
 ## Background
 
-Large XML files can be a pain to mantain in version control. These files can contain thousands of lines and it becomes very difficult to track changes made to these files in a standard version control server like GitHub.
+Transforms large XML files into smaller JSON5 files, a more flexible JSON format that allows comments and trailing commas, making it more developer-friendly. Supports reassembly into XML when required.
 
-This package offers a way to break down large XML files into smaller JSON5 files which can be used to review changes in a format easier to digest. When needed, the inverse class will reassemble the original XML file from the smaller JSON5 files.
+This is an extension of [`xml-disassembler`](https://github.com/mcarvin8/xml-disassembler).
 
 ## Install
 
