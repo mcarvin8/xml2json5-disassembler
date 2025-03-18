@@ -38,7 +38,7 @@ npm install xml2json5-disassembler
 
 ### XML to JSON5
 
-Disassemble then transform 1 or multiple XML files in the root of a directory into JSON5 files. Paths provided must be **relative** paths.
+Disassemble then transform 1 or multiple XML files into JSON5 files.
 
 ```typescript
 /* 
@@ -66,17 +66,15 @@ await handler.disassemble({
 
 ### JSON5 to XML
 
-Reassemble all of the JSON5 files in a directory into 1 XML file. Path provided must be **relative** path. 
-
-> **Note:** You should only be reassembling JSON5 files created by the `XmlToJson5Disassembler` class for intended results. The reassembled XML file will be created in the parent directory of `filePath` and will overwrite the original file used to create the original disassembled directories, if it still exists and the `fileExtension` flag matches the original file extension.
+Reassemble the disassembled JSON5 directory into 1 XML file.
 
 ```typescript
 /* 
 FLAGS
-- filePath: Relative path to the directory containing the JSON5 files to reassemble into 1 XML file (must be a directory).
-- fileExtension: (Optional) Desired file extension for the final XML (default: `.xml`).
-- postPurge: (Optional) Boolean value. If set to true, purge the disassembled directory containing JSON5 files after the XML is reassembled.
-                               Defaults to false.
+- filePath:        Relative path to the disassembled JSON5 directory to reassemble as an XML file.
+- fileExtension:   File extension for the reassembled XML.
+                   (default: `.xml`)
+- postPurge:       Delete the disassembled directory after reassembly.
 */
 import { Json5ToXmlReassembler } from "xml2json5-disassembler";
 
