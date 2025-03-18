@@ -36,7 +36,7 @@ npm install xml2json5-disassembler
 
 ## Usage
 
-### XML2 to JSON5
+### XML to JSON5
 
 Disassemble then transform 1 or multiple XML files in the root of a directory into JSON5 files. Paths provided must be **relative** paths.
 
