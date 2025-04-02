@@ -1,6 +1,6 @@
 {
   "name": "xml2json5-disassembler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Disassemble XML files into smaller, more manageable JSON5 files and reassemble the XML when needed.",
   "author": "Matt Carvin",
   "license": "ISC",
